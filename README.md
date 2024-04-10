@@ -1,1 +1,1 @@
-<a href="https://jeshjangid.github.io/Restaurent-cafe-theam/">Preview</a>
+<a href="https://jeshjangid.github.io/Restaurent-cafe-theam/home">Preview</a>
