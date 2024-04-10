@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+span {
+    color: #FEBC30;
+}
+
+h1 {
+    font-family: "Domine", serif;
+    font-size: 3em !important;
+}
+
+h4 {
+    font-family: "Domine", serif;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 18px;
+    color: grey;
+}
+
+a {
+    padding: 15px 5px 15px 20px;
+    border-radius: 50px;
+    position: relative;
+    font-weight: bold;
+}
+
+a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+i {
+    color: black;
+    margin-left: 10px;
+    background-color: #FEBC30;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.8s ease;
+}
+
+
+
+/* ======================== Hero Section CSS ========================== */
+.hero-section {
+    text-align: center;
+    background: url(../img/page-header-bg.jpg) center;
+    background-size:cover;
+    height: 90vh;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    padding-top: 300px;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: absolute !important;
+    top: 30px;
+    left: 20px;
+    z-index: 99;
+    width: 97%;
+    font-style: bold;
+    border-radius: 50px;
+}
+
+@media (max-width:474px) {
+    .navbar {
+        width: 95%;
+        left: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        left: 10px;
+    }
+}
+
+@media (max-width:375px) {
+    .navbar {
+        padding: 20px;
+        border-radius: 50px;
+        width: 98%;
+        left: 3px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar .navbar-toggler-icon:focus {
+        box-shadow: none;
+    }
+}
+
+.nav-link:hover {
+    color: #FEBC30 !important;
+    transition: all 0.3s ease !important;
+}
+
+.dropdown-menu {
+    background-color: #FEBC30 !important;
+    transition: all 0.3s ease !important;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+    background-color: #FFFFFF1A;
+    transition: all 0.3s ease !important;
+}
+
+.navbar .button {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    padding: 5px 5px 5px 10px;
+}
+
+@media (max-width:991px) {
+    .navbar .button {
+        padding: 15px 5px 15px 20px;
+    }
+}
+
+.navbar .button:hover {
+    color: black;
+    transition: all .5s linear;
+}
+
+.navbar .button:hover i {
+    background-color: white;
+    transition: all .8s ease;
+}
+
+.navbar .button:hover::before {
+    transition: all 0.5s ease;
+    background-color: #FEBC30;
+    width: 100%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section .heading-section {
+    z-index: 1;
+}
+
+.hero-section h1 {
+    margin: 0px auto;
+    font-size: 70px !important;
+    width: 55%;
+}
+
+.hero-section p {
+    width: 43%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+/* ======================= About Restaurent ====================== */
+.About-Restaurant {
+    padding: 150px 0 90px;
+    gap: 90px;
+}
+
+.About-Restaurant .images {
+    display: flex;
+    gap: 25px;
+}
+
+.About-Restaurant .images img {
+    border-radius: 30px;
+}
+
+.About-Restaurant .images .position {
+    position: relative;
+}
+
+.About-Restaurant .images img {
+    width: 100%;
+}
+
+.About-Restaurant .since {
+    position: absolute;
+    top: -70px;
+    right: -45px;
+    display: inline;
+    border: 10px solid white;
+    padding: 30px;
+    border-radius: 50%;
+    background-color: #FEBC30;
+}
+
+.About-Restaurant .since h3 {
+    text-align: center;
+}
+
+.About-Restaurant .since h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.About-Restaurant .text {
+    margin-left: 50px;
+    position: relative;
+}
+
+.About-Restaurant .text h1 {
+    width: 90%;
+    color: black;
+    font-size: 50px;
+    font-family: 'domine', sans-serif;
+    margin-top: 15px;
+}
+
+.About-Restaurant .text p {
+    margin: 20px 0;
+}
+
+.About-Restaurant .text::after {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: 0;
+    background: url(../img/home-about-bg.png);
+    background-size: cover;
+    width: 300px;
+    height: 600px;
+    z-index: -1;
+}
+
+.About-Restaurant .content {
+    margin-left: 50px;
+}
+
+.About-Restaurant .text h6 {
+    color: #888080;
+}
+
+.About-Restaurant a {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.About-Restaurant a i{
+    border: 1px solid black;
+    transition: all .8s ease;
+}
+
+.About-Restaurant a:hover i{
+    background-color: white;
+    border: 1px solid white;
+}
+
+.About-Restaurant a:hover{
+    color: black;
+    transition: all .5s linear;
+}
+
+.About-Restaurant a:hover::before{
+    transition: all .3s ease;
+    background-color: #FEBC30;
+    width: 100%;
+}
+
+.About-Restaurant .content h4 {
+    color: black;
+    margin: 10px 0px;
+}
+
+.About-Restaurant .content div {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+/* ======================= Gallery Section CSS ====================== */
+.gallery-section{
+    padding: 100px 20px;
+    background-color: #F7F4ED;
+}
+
+.gallery-section .heading{
+    text-align: center;
+}
+
+.gallery-section .heading h6{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.gallery-section .heading h1{
+    color: black;
+}
+
+.gallery-section .image{
+    overflow: hidden;
+}
+
+.gallery-section .image .pic{
+    position: relative;
+    border-radius: 30px;
+}
+.gallery-section .image .pic::after{
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.image:hover .pic::after{
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+} 
+
+
+
+
+/* ========================= Chefs Section CSS ======================== */
+.chefs-section {
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.chefs-section h6 {
+    color: #888080;
+}
+
+.chefs-section .posts .pic::after {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+.chefs-section .posts:hover .pic::after{
+    height: 250%;
+    transition: all 500ms linear;
+    background-color: transparent;
+} 
+
+.chefs-section::before {
+    content: '';
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-image: url(../img/upcoming-events-bg.png);
+    background-size: cover;
+    width: 300px;
+    height: 590px;
+    z-index: -1;
+}
+
+.chefs-section .posts img{
+    transition: all 0.5s ease;
+}
+
+.chefs-section .posts:hover img{
+    transform: scale(1.1);
+}
+
+.chefs-section .posts .content {
+    background-color: #F7F4ED;
+    padding: 30px 0 30px 20px;
+}
+
+.chefs-section .posts h4 {
+    color: black;
+    margin-top: 20px;
+}
+
+
+
+/* ====================== Testimonial Section ====================== */
+.testimonial-section {
+    background: black;
+    padding: 100px 20px 0;
+}
+
+.testimonial-section::before{
+    content: '';
+    position: absolute;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    background: url(../img/testimonial-bg.png) no-repeat bottom left;
+    background-size: cover;
+    width: 214px;
+    height: 531px;
+    z-index: 1;
+}
+
+.testimonial-section .content {
+    padding-top: 100px;
+    z-index: 22;
+}
+
+.testimonial-section .content h1 {
+    margin: 15px 0 30px;
+}
+
+.testimonial-section .content p {
+    width: 75%;
+    color: #B5B5B5;
+}
+
+.testimonial-section .content h5 {
+    margin-top: 20px;
+}
+
+.testimonial-section .content i:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.5s linear;
+}
+
+
+
+
+
+/* ========================Discover CSS========================== */
+.discover-section {
+    padding: 100px 20px;
+}
+
+.discover-section .search {
+    background-color: #191919;
+    padding: 30px;
+    margin: 0 5px 50px;
+    border-radius: 30px;
+}
+
+.discover-section .search h1 {
+    padding: 40px 0 0 0;
+    font-size: 50px;
+}
+
+
+.discover-section .search p {
+    margin: 25px 0 50px;
+    font-size: 18px;
+}
+
+.discover-section .search a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    z-index: 1;
+}
+
+.discover-section .search a i{
+    border: 1px solid white;
+}
+
+.discover-section .search a:hover i{
+    background-color: white;
+    transition: all .8s ease;
+}
+
+.discover-section .search a:hover{
+    transition: all .5s linear;
+}
+
+.discover-section .search a:hover::before{
+    transition: all .5s ease;
+    background-color: #FEBC30;
+    width: 100%;
+}
+
+
+
+
+/* ======================== Footer Section CSS ======================== */
+.footer-section {
+    background-color: #010101;
+    padding: 90px 15px 10px;
+}
+
+.footer-section img {
+    margin-bottom: 30px;
+}
+
+@media (max-width:574px) {
+    .footer-section .logo {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width:575px) {
+    .footer-section .logo {
+        text-align: center;
+        padding: 60px;
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .footer-section .logo .social {
+        text-align: center !important;
+        margin-bottom:20px;
+    }
+}
+
+.footer-section .logo a {
+    padding: 0;
+}
+
+.footer-section .logo i {
+    background-color: #1C1C1C;
+    color: white;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.footer-section .logo i:hover {
+    background-color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .logo i,
+.contact i {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+
+}
+
+.footer-section .logo p {
+    color: white;
+    width: 77%;
+}
+
+.footer-section li {
+    list-style: none;
+    background-color: none;
+    padding: 0;
+}
+
+.footer-section a {
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    transition: .25s;
+}
+
+.footer-section .menu i,
+.links i {
+    background-color: transparent;
+    color: grey;
+    transition: .25s;
+    margin-left: 0;
+    padding: 10px 10px 10px 0;
+}
+
+.footer-section .menu a:hover,
+.links a:hover,
+.menu a:hover i,
+.links a:hover i {
+    color: #FEBC30 !important;
+    padding-left: 10px;
+    transition: .25s;
+}
+
+.footer-section .contact {
+    text-align: left;
+}
+
+.footer-section .contact span {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.footer-section .contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-section .contact a:hover {
+    color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .contact i {
+    color: white;
+}
+
+.footer-section .subscribe {
+    background-color: #1C1C1C;
+    margin: 30px 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.footer-section .subscribe input {
+    width: 475px;
+    background-color: #141414;
+    padding: 10px 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+}
+
+.footer-section .subscribe button {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #FEBC30;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+}
+
+.footer-section .subscribe button:hover{
+    background-color: white;
+    color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .copyright p {
+    color: white;
+}
+
+.footer-section .copyright a{
+    margin-left: -30px;
+}
+
+.footer-section .copyright i {
+    background-color: transparent;
+    color: white;
+}
+

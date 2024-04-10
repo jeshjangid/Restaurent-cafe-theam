@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+span {
+    color: #FEBC30;
+}
+
+h1 {
+    font-family: "Domine", serif;
+    font-size: 3em !important;
+}
+
+h4 {
+    font-family: "Domine", serif;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 18px;
+    color: grey;
+}
+
+a {
+    padding: 15px 5px 15px 20px;
+    border-radius: 50px;
+    position: relative;
+    /* font-weight: bold; */
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+i {
+    color: black;
+    margin-left: 10px;
+    background-color: #FEBC30;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.8s ease;
+}
+
+
+
+/* ======================== Hero Section CSS ========================== */
+.hero-section {
+    text-align: center;
+    background: url(../img/page-header-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    padding: 280px 0 120px;
+}
+
+.navbar {
+    position: absolute !important;
+    top: 30px;
+    left: 20px;
+    z-index: 99;
+    width: 97%;
+    font-style: bold;
+    border-radius: 50px;
+}
+
+@media (max-width:474px) {
+    .navbar {
+        width: 95%;
+        left: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar {
+        left: 10px;
+    }
+}
+
+@media (max-width:375px) {
+    .navbar {
+        padding: 20px;
+        border-radius: 50px;
+        width: 98%;
+        left: 3px;
+    }
+}
+
+@media (max-width:767px) {
+    .navbar .navbar-toggler-icon:focus {
+        box-shadow: none;
+    }
+}
+
+.nav-link:hover {
+    color: #FEBC30 !important;
+    transition: all 0.3s ease !important;
+}
+
+.dropdown-menu {
+    background-color: #FEBC30 !important;
+    transition: all 0.3s ease !important;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+    background-color: #FFFFFF1A;
+    transition: all 0.3s ease !important;
+}
+
+.navbar .button {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+    padding: 5px 5px 5px 10px;
+}
+
+@media (max-width:991px) {
+    .navbar .button {
+        padding: 15px 5px 15px 20px;
+    }
+}
+
+.navbar .button:hover {
+    color: black;
+    transition: all .5s linear;
+}
+
+.navbar .button:hover i {
+    background-color: white;
+    transition: all .8s ease;
+}
+
+.navbar .button:hover::before {
+    transition: all 0.5s ease;
+    background-color: #FEBC30;
+    width: 100%;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section .heading-section {
+    z-index: 1;
+}
+
+.hero-section h1 {
+    margin: 0px auto;
+    font-size: 70px !important;
+    width: 55%;
+}
+
+.hero-section p {
+    width: 43%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+/* ====================== Send MSG Section CSS ======================== */
+.send-msg-section {
+    padding: 100px 20px;
+}
+
+.send-msg-section .content h6 {
+    color: #888080;
+}
+
+.send-msg-section h1 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.send-msg-section p {
+    margin-bottom: 40px;
+}
+
+.send-msg-section a {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.send-msg-section a i {
+    border: 1px solid black;
+    transition: all .8s ease;
+}
+
+.send-msg-section a:hover i {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.send-msg-section a:hover {
+    color: black;
+    transition: all .5s linear;
+}
+
+.send-msg-section a:hover::before {
+    transition: all .3s ease;
+    background-color: #FEBC30;
+    width: 100%;
+}
+
+.send-msg-section form {
+    background-color: #F7F4ED;
+    padding: 50px 30px;
+    border-radius: 30px;
+}
+
+.send-msg-section input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    padding: 12px 20px 12px 0;
+    color: #000;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.send-msg-section textarea {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid grey;
+    padding: 12px 20px 12px 0;
+    color: #000;
+    outline: none;
+}
+
+
+
+
+
+
+/* ======================= Footer Section CSS ======================== */
+.footer-section {
+    background-color: #010101;
+    padding: 90px 15px 10px;
+}
+
+.footer-section img {
+    margin-bottom: 30px;
+}
+
+@media (max-width:574px) {
+    .footer-section .logo {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width:575px) {
+    .footer-section .logo {
+        /* text-align: center; */
+        padding: 60px;
+    }
+}
+
+@media (min-width:991px) {
+    .footer-section .logo {
+        padding: 0 0 0 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .footer-section .logo .social {
+        padding: 0 45px;
+        margin-bottom: 25px;
+    }
+}
+
+.footer-section .logo i {
+    background-color: #1C1C1C;
+    color: white;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+.footer-section .logo i:hover {
+    background-color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .logo i,
+.contact i {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+
+}
+
+.footer-section .logo p {
+    color: white;
+    width: 77%;
+}
+
+@media (max-width:767px) {
+    .footer-section .logo p {
+        width: 100%;
+    }
+}
+
+.footer-section .menu ul,
+.links ul {
+    padding: 0;
+}
+
+@media (max-width:767px) {
+
+    .footer-section .menu,
+    .links {
+        padding-left: 15px;
+    }
+}
+
+.footer-section li {
+    list-style: none;
+    background-color: none;
+    padding: 0;
+}
+
+.footer-section a {
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    transition: .25s;
+}
+
+.footer-section .menu i,
+.links i {
+    background-color: transparent;
+    color: grey;
+    transition: .25s;
+    margin-left: 0;
+    padding: 10px 10px 10px 0;
+}
+
+.footer-section .menu a:hover,
+.links a:hover,
+.menu a:hover i,
+.links a:hover i {
+    color: #FEBC30 !important;
+    padding-left: 10px;
+    transition: .25s;
+}
+
+.footer-section .contact {
+    text-align: left;
+}
+
+.footer-section .contact span {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.footer-section .contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-section .contact a:hover {
+    color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .contact i {
+    color: white;
+}
+
+.footer-section .subscribe {
+    background-color: #1C1C1C;
+    margin: 30px 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+@media (max-width:991px) {
+    .footer-section .subscribe {
+        text-align: center;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+
+.footer-section .subscribe h4 {
+    margin-bottom: 0;
+}
+
+@media (max-width:991px) {
+    .footer-section .subscribe h4 {
+        margin-bottom: 10px;
+    }
+
+}
+
+.footer-section .subscribe input {
+    width: 470px;
+    background-color: #141414;
+    padding: 10px 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+}
+
+.footer-section .subscribe input:focus {
+    outline: 2px solid red;
+    padding: 8px 20px;
+}
+
+@media (max-width:767px) {
+    .footer-section .subscribe input {
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .footer-section .subscribe input:focus {
+        outline: none;
+    }
+}
+
+.footer-section .subscribe button {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #FEBC30;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+}
+
+@media (max-width:767px) {
+    .footer-section .subscribe button {
+        border-radius: 0;
+        border: none;
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.footer-section .subscribe button:hover {
+    background-color: white;
+    color: #FEBC30;
+    transition: all 0.5s ease;
+}
+
+.footer-section .copyright p {
+    color: white;
+}
+
+.footer-section .copyright i {
+    background-color: transparent;
+    color: white;
+}
